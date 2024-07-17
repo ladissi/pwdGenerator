@@ -18,13 +18,14 @@ function generate() {
 function copyTextOne() {
     console.log("hit func")
     let pwdOne = document.getElementById("pwdOne").textContent
-    navigator.clipboard.writeText(pwdOne.value);
-    alert("Copied the text: " + pwdOne.value);
+    console.log(pwdOne)
+    navigator.clipboard.writeText(pwdOne);
+    alert("Copied the text: " + pwdOne);
 }
 
 function copyTextTwo() {
     console.log("hit func")
     let pwdTwo = document.getElementById("pwdTwo").textContent
-    navigator.clipboard.writeText(pwdTwo.value);
-    alert("Copied the text: " + pwdTwo.value);
+    navigator.clipboard.writeText(pwdTwo);
+    alert("Copied the text: " + pwdTwo);
 }
